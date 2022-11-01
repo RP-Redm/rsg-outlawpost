@@ -36,7 +36,7 @@ AddEventHandler('rsg-outlawpost:server:sellgoldbars', function(amount)
 			goldbarprice = Config.GoldBarPrice
 			totalcash = (amount * goldbarprice) 
 			Player.Functions.RemoveItem('goldbar', amount)
-			TriggerClientEvent('inventory:client:ItemBox', src, sharedItems['goldbar'], "remove")
+			TriggerClientEvent('inventory:client:ItemBox', src, QRCore.Shared.Items['goldbar'], "remove")
 			Player.Functions.AddMoney('cash', totalcash)
 			TriggerClientEvent('QRCore:Notify', src, 'You sold ' ..amount.. ' gold bars for $'..totalcash, 'success')
 		else
