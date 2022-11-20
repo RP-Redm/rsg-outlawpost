@@ -40,11 +40,13 @@ Config.OutlawLocations = {
 
 -- outlaw shop
 Config.OutlawShop = {
-	[1] = {	name = "weapon_thrown_bolas",				price = 10,	amount = 100,	info = {},	type = "weapon",	slot = 1, },
-	[2] = {	name = "weapon_thrown_bolas_hawkmoth",		price = 20,	amount = 100,	info = {},	type = "weapon",	slot = 2, },
-	[3] = {	name = "weapon_thrown_bolas_ironspiked",	price = 30,	amount = 100,	info = {},	type = "weapon",	slot = 3, },
-	[4] = {	name = "weapon_thrown_bolas_intertwined",	price = 40,	amount = 100,	info = {},	type = "weapon",	slot = 4, },
-	[5] = {	name = "weapon_thrown_dynamite",			price = 50,	amount = 100,	info = {},	type = "weapon",	slot = 5, },
-	[6] = {	name = "weapon_thrown_molotov",				price = 50,	amount = 100,	info = {},	type = "weapon",	slot = 6, },
-	[7] = {	name = "weapon_thrown_poisonbottle",		price = 50,	amount = 100,	info = {},	type = "weapon",	slot = 7, },
+	[1] = {	name = "bolas",					price = 5,	amount = 100,	info = {},	type = "item",	slot = 1, },
+	[2] = {	name = "bolas_hawkmoth",		price = 5,	amount = 100,	info = {},	type = "item",	slot = 2, },
+	[3] = {	name = "bolas_ironspiked",		price = 5,	amount = 100,	info = {},	type = "item",	slot = 3, },
+	[4] = {	name = "bolas_intertwined",		price = 5,	amount = 100,	info = {},	type = "item",	slot = 4, },
+	[5] = {	name = "dynamitestick",			price = 5,	amount = 100,	info = {},	type = "item",	slot = 5, },
+	[6] = {	name = "molotov",				price = 5,	amount = 100,	info = {},	type = "item",	slot = 6, },
+	[7] = {	name = "poisonbottle",			price = 5,	amount = 100,	info = {},	type = "item",	slot = 7, },
+	[8] = {	name = "throwing_knives",		price = 5,	amount = 100,	info = {},	type = "item",	slot = 8, },
+	[9] = {	name = "tomahawk",				price = 5,	amount = 100,	info = {},	type = "item",	slot = 9, },
 }
