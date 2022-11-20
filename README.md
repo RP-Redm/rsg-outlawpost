@@ -14,6 +14,7 @@
 - qr-menu
 - qr-input
 - PolyZone
+- [rsg-weapons](https://github.com/Rexshack-RedM/rsg-weapons)
 
 # Installation
 - ensure that the dependancies are added and started
