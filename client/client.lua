@@ -1,4 +1,4 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 local Zones = {}
 local zonename = NIL
 local inHostileZone = false
@@ -15,7 +15,7 @@ CreateThread(function()
 			if isPointInside then
 				inHostileZone = true
 				zonename = Zones[k].name
-				QRCore.Functions.Notify('you have entered a hostle zone!', 'primary')
+				RSGCore.Functions.Notify('you have entered a hostle zone!', 'primary')
 				TriggerEvent('rsg-outlawpost:client:hostilezone', name)
 			else
 				inHostileZone = false
@@ -56,7 +56,7 @@ end)
 
 Citizen.CreateThread(function()
     for outlaw, v in pairs(Config.OutlawLocations) do
-        exports['qr-core']:createPrompt(v.location, v.coords, 0xF3830D8E, 'Open ' .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.coords, 0xF3830D8E, 'Open ' .. v.name, {
             type = 'client',
             event = 'rsg-outlawpost:cient:openMenu',
             args = {},
@@ -72,7 +72,7 @@ end)
 
 -- outlaw menu
 RegisterNetEvent('rsg-outlawpost:cient:openMenu', function(data)
-    exports['qr-menu']:openMenu({
+    exports['rsg-menu']:openMenu({
         {
             header = "| Outlaw Menu |",
             isMenuHeader = true,
@@ -108,7 +108,7 @@ RegisterNetEvent('rsg-outlawpost:cient:openMenu', function(data)
             header = "Close Menu",
             txt = '',
             params = {
-                event = 'qr-menu:closeMenu',
+                event = 'rsg-menu:closeMenu',
             }
         },
     })
@@ -117,7 +117,7 @@ end)
 -- wash blood money
 RegisterNetEvent('rsg-outlawpost:client:sellbloodmoney')
 AddEventHandler('rsg-outlawpost:client:sellbloodmoney', function()
-    local moneywash = exports['qr-input']:ShowInput({
+    local moneywash = exports['rsg-input']:ShowInput({
         --header = "Money Wash",
 		header = "<center><p><img src=nui://"..Config.BloodMoneyImage.." width=100px></p>"..Config.BloodMoneyLabel,
 		inputs = {
@@ -141,7 +141,7 @@ end)
 -- sell gold bars
 RegisterNetEvent('rsg-outlawpost:client:sellgoldbars')
 AddEventHandler('rsg-outlawpost:client:sellgoldbars', function()
-    local goldbars = exports['qr-input']:ShowInput({
+    local goldbars = exports['rsg-input']:ShowInput({
         --header = "Gold Bars",
 		header = "<center><p><img src=nui://"..Config.GoldBarImage.." width=100px></p>"..Config.GoldBarLabel,
 		inputs = {

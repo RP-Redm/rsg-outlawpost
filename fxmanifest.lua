@@ -23,9 +23,9 @@ shared_scripts {
 }
 
 dependencies {
-	'qr-core',
-	'qr-menu',
-	'qr-input',
+	'rsg-core',
+	'rsg-menu',
+	'rsg-input',
 	'PolyZone',
 }
 
