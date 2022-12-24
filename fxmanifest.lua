@@ -6,27 +6,27 @@ author 'RexShack#3041'
 description 'rsg-outlawpost'
 
 client_scripts {
-	'@PolyZone/client.lua',
+    '@PolyZone/client.lua',
     '@PolyZone/BoxZone.lua',
     '@PolyZone/EntityZone.lua',
     '@PolyZone/CircleZone.lua',
     '@PolyZone/ComboZone.lua',
-	'client/client.lua',
+    'client/client.lua',
 }
 
 server_scripts {
-	'server/server.lua'
+    'server/server.lua'
 }
 
 shared_scripts {
-	'config.lua',
+    'config.lua',
 }
 
 dependencies {
-	'rsg-core',
-	'rsg-menu',
-	'rsg-input',
-	'PolyZone',
+    'rsg-core',
+    'rsg-menu',
+    'rsg-input',
+    'PolyZone',
 }
 
 lua54 'yes'
