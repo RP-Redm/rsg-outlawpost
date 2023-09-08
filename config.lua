@@ -2,9 +2,9 @@ Config = {}
 
 Config.GoldBarPrice = 800 -- amount of cash per 1 gold bar
 Config.BloodMoneyPrice = 1 -- amount of cash per 1 blood money
-Config.BloodMoneyImage = "qr-inventory/html/images/bloodmoney.png"
+Config.BloodMoneyImage = "rsg-inventory/html/images/bloodmoney.png"
 Config.BloodMoneyLabel = "Wash Blood Money"
-Config.GoldBarImage = "qr-inventory/html/images/goldbar.png"
+Config.GoldBarImage = "rsg-inventory/html/images/goldbar.png"
 Config.GoldBarLabel = "Trade Gold Bars"
 Config.MoneyType = 'bloodmoney'
 Config.GoldType = 'goldbar'
